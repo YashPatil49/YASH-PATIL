@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Navbar</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:darkgreen; 
+            padding: 10px 20px;
+            height: 70px;
+        }
+
+        
+        .navbar .logo {
+            font-size: 1.8em;
+            color: rgb(255, 123, 0);
+            font-weight: bold;
+        }
+
+        
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+     
+        .navbar ul li a:hover {
+            background-color: orange; 
+            transform: scale(1.05);
+            border-radius: 4px;
+        }
+
+       
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+    <nav class="navbar">
+      
+        <div class="logo" style="margin-left: 15px;">
+           <span>Susainify<span style="color: greenyellow;">ify</span></span>
+        </div>
+
+     
+        <ul>
+            
+                
+        <button onclick="chat()">chatbox</button>
+        <script>
+            function chat(){
+                window.location.href = "https://bot.dialogflow.com/49fb10f4-d2f2-41e5-b63e-0ceba20b7643";
+            }
+        </script>
+        
+            <li><button style="background-color: transparent;"><a href="#login">Home</a></li>
+            <li><button style="background-color: transparent;"><a href="#login">AboutUs</a></li>
+            <li><button onclick="func()" style="background-color: transparent;"><a href="#login">Products</a></li>
+            <li><button onclick="scrol()" style="background-color: transparent;"><a href="#login">CommunityWork</a></li>
+            <li><button onclick="funcccc()" style="background-color: transparent;"><a href="#login">LOGIN</a></li>
+            </ul>
+        </nav>
+        <script>
+            function scrol(){
+                const target = document.getElementById('target');
+                target.scrollIntoView({ behavior: 'smooth' });
+             }
+        </script>
+        <script>
+            function funcccc(){
+                window.location.assign("loged.html")
+            }
+        </script>
+<script>
+    function funccc(){
+        window.location.assign("login.html")
+    }
+</script>
+    <style>
+      
+        .scrolling-text-container {
+            width: 100%;
+            overflow: hidden; 
+            background-color: rgb(150, 116, 52);
+            padding: 10px 10;
+        }
+
+       
+        .scrolling-text {
+            display: inline-block;
+            white-space: nowrap; 
+            color: rgb(255, 255, 255);
+            font-size: 1.5em;
+            
+            animation: scroll 10s linear infinite; /
+        }
+
+       
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%); 
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            Welcome to Our Website! | Check Out Our Latest Products and Offers | Join Our Community Now! | 
+        </div>
+    </div>
+<div class="brush">
+    <img src="Screenshot 2024-10-12 at 1.23.12 PM.png"  class="imag">
+ 
+    <style>
+        .brush{
+            height: 800px;
+            width: 100%;
+            background-color: aqua;
+            
+        }
+        .imag{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;  
+        align-items: center; 
+        background-color: green;
+        padding: 10px 20px; 
+        height: 60px;
+    }
+
+   
+    .search-container {
+        display: flex;
+        align-items: center; 
+    }
+
+    
+    .navbar input[type="text"] {
+        padding: 8px 15px;
+        border-radius: 4px 0 0 4px; 
+        border: 1px solid #ccc;
+        outline: none;
+        width: 400px;
+        transition: width 0.4s ease;
+    }
+
+    
+    .navbar input[type="text"]:focus {
+        width: 500px; 
+    }
+
+   
+    .navbar button {
+        padding: 10px 15px;
+        background-color: #4CAF50; 
+        color: white;
+        border: 1px solid #4CAF50;
+        border-radius: 0 4px 4px 0; /
+       
+        
+    }
+
+   
+    .navbar button:hover {
+        background-color: #045708; 
+    }
+
+    
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: background 0.3s, transform 0.3s;
+    }
+
+    
+    .navbar a:hover {
+        background-color: orange;
+        transform: scale(1.1); 
+    }
+
+   
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .navbar input[type="text"] {
+            width: 100%;
+        }
+
+        .navbar button {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .navbar a {
+            width: 100%;
+            text-align: left;
+        }
+    }
+</style>
+<style>
+    
+    .scroll-section {
+        width: 100%;
+        overflow: hidden; 
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+
+   
+    .scroll-track {
+        display: flex;
+        gap: 20px;
+        animation: scrollEffect 20s linear infinite; 
+    }
+
+  
+    @keyframes scrollEffect {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+   
+    .scroll-card {
+        flex: 0 0 auto;
+        width: 250px;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+    }
+
+   
+    .scroll-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+   
+    .scroll-card-content {
+        padding: 10px;
+    }
+
+    .scroll-card-content h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .scroll-card-content p {
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    
+    .scroll-card:hover {
+        transform: scale(1.05);
+    }
+
+</style>
+</head>
+<body>
+<div class="diwali">DIWALI SALE
+    <style>
+        .diwali{
+            margin-top: 30px;
+            margin-left: 750px;
+            font-weight: 900;
+            font-size: 30px;
+            color: #4CAF50;
+        }
+    </style>
+</div>
+
+<div class="scroll-section">
+    <div class="scroll-track">
+       
+        <div class="scroll-card">
+            <img src="_81-hr-zm-vmmi-l-sx-679-10.png" alt="Card Image">
+            <div class="scroll-card-content">
+                <h3 style="color: sienna;">GKD WATER BOTTLE</h3>
+                <p style="font-weight:bolder;">Eco-friendly Bamboo Water Bottle<br>
+                    ₹499<br><button onclick="func()" class="butt">view</button></p>
+            </div>
+        </div>
+
+       
+        <div class="scroll-card">
+            <img src="bengal-mat-5000-x-30.png" alt="Card Image">
+            <div class="scroll-card-content">
+                <h3 style="color: sienna;">PROYOG YOGA MAT</h3>
+                <p style="font-weight: bolder;">Eco-friendly<br>Made with 100% Recycled matter<br>
+                    ₹1799<button onclick="func()" class="butt">view</button></p>
+            </div>
+        </div>
+
+        
+        <div class="scroll-card">
+            <img src="untitled-10.png" alt="Card Image">
+            <div class="scroll-card-content">
+                <h3 style="color: sienna;">Thenga Cup Set</h3>
+                <p style="font-weight: bolder;">Coconut Shell<br>Set of 4<br>₹599
+                    <button onclick="func()" class="butt">view</button></p>
+            </div>
+        </div>
+
+       
+        <div class="scroll-card">
+            <img src="DarraNatMugS4SHF24.jpeg" alt="Card Image">
+            <div class="scroll-card-content">
+                <h3 style="color: sienna;">Iruada Naturals Mug</h3>
+                <p style="font-weight: bolder;">Irida Husk Coffee Mug<br>
+                    ₹299<button onclick="func()" class="butt">view</button></p>
+            </div>
+        </div>
+
+      
+        <div class="scroll-card">
+            <img src="image-30.png" alt="Card Image">
+            <div class="scroll-card-content">
+                <h3 style="color: sienna;">Thenga Bowl</h3>
+                <p style="font-weight: bolder;">Jumbo Coconut Bowl<br>
+                    ₹399<button onclick="func()" class="butt">view</button></p>
+            </div>
+        </div>
+
+        
+        <div class="scroll-card">
+            <img src="image-20.png" alt="Card Image">
+            <div class="scroll-card-content">
+                <h3 style="color: sienna;">Wood Spoon</h3>
+                <p style="font-weight: bolder;">Completely made with Coconut<br>
+                    ₹199<button onclick="func()" class="butt">view</button></p>
+            </div>
+        </div>
+
+       
+        <div class="scroll-card">
+            <img src="image-40.png" alt="Card Image">
+            <div class="scroll-card-content">
+                <h3 style="color: sienna;">Golden Tips Bag</h3>
+                <p style="font-weight: bolder;">Multipurpose Jute Bag
+                    <button onclick="func()" class="butt">view</button></p>
+            </div>
+        </div>
+        <style>
+            .butt{
+                background-color: orange;
+                margin-left: 15px;
+                border-radius: 5px;
+                }
+        </style>
+        <script>
+            function func(){
+             window.location.assign("index.html");
+            }
+
+        </script>
+
+        
+    </div>
+</div>
+<style>
+    /* Basic page styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    /* Container for the entire section */
+    .impact-section {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* Header styling */
+    .impact-header {
+        font-size: 24px;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    /* Container for the impact cards */
+    .impact-cards {
+        display: flex;
+        justify-content: center; /* Center cards */
+        gap: 20px; /* Space between cards */
+    }
+
+    /* Individual card styling */
+    .impact-card {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex: 1; /* Allow cards to grow equally */
+        min-width: 250px; /* Minimum width for cards */
+    }
+
+    /* Impact number styling */
+    .impact-number {
+        font-size: 32px;
+        font-weight: bold;
+        color: #8BC34A; /* Green color for numbers */
+        margin-bottom: 10px;
+    }
+
+    /* Impact description styling */
+    .impact-description {
+        font-size: 14px;
+        color: #7A7A7A; /* Brownish color for descriptions */
+    }
+
+</style>
+</head>
+<body>
+
+    <hr>
+    <style>
+         hr {
+            border: none; /* Remove default border */
+            height: 2px; /* Thickness of the line */
+            background-color:sienna; /* Color of the line */
+            margin: 20px 0; /* Space around the line */
+            margin-top: 50px;
+            margin-bottom: 35px;
+
+        }
+    </style>
+
+<div class="impact-section">
+    <div class="impact-header" style="font-weight: 700;">Our Impact</div>
+    <div class="impact-cards">
+        <!-- Card 1 -->
+        <div class="impact-card">
+            <div class="impact-number">641,698+</div>
+            <div class="impact-description">ZERO PLASTIC PRODUCTS SOLD</div>
+        </div>
+        <!-- Card 2 -->
+        <div class="impact-card">
+            <div class="impact-number">160,425 kgs</div>
+            <div class="impact-description">PLASTIC POLLUTION PREVENTED</div>
+        </div>
+        <!-- Card 3 -->
+        <div class="impact-card">
+            <div class="impact-number">42,780 tons</div>
+            <div class="impact-description">CARBON EMISSIONS PREVENTED</div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .grid-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        height: 200px;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .grid-item h3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 0;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+    <hr>
+
+<h2 id="target" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 20px;">Our Community Work</h2>
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="WhatsApp Image 2024-10-12 at 10.47.44_e21a1c2d.jpg"  class="imgg">
+        <style>
+            .imgg{
+             width: full;
+             height: full;
+            }
+        </style>
+        <h3>Beach Warriors</h3>
+    </div>
+    <div class="grid-item">
+        <img src="WhatsApp Image 2024-10-12 at 10.50.52_520e38ca.jpg" alt="Work Anniversary Gift Hampers">
+        <h3>Project Mumbai</h3>
+    </div>
+    <div class="grid-item">
+        <img src="WhatsApp Image 2024-10-12 at 10.50.11_6877704f.jpg" alt="Welcome Kits for Employees">
+        <h3>Mumbai Cleanup</h3>
+    </div>
+    <div class="grid-item">
+        <img src="WhatsApp Image 2024-10-12 at 10.56.40_08a200e7.jpg" alt="Signature Collection III">
+        <h3>Afroz Shah Foundation</h3>
+    </div>
+    <div class="grid-item">
+        <img src="WhatsApp Image 2024-10-12 at 11.00.09_e74709e7.jpg" alt="Diwali Gift Hampers">
+        <h3>Civic Response Team (CRT)</h3>
+    </div>
+    
+   
+</div>
+
+  <hr>
+ 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Amazing Parterns</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .client-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .client-item {
+            text-align: center;
+            width: 120px; /* Adjust as needed */
+        }
+
+        .client-item img {
+            width: 100px; /* Adjust as needed */
+            height: auto;
+            border-radius: 50%; /* Makes the image circular */
+            border: 2px solid #ddd; /* Optional border */
+            padding: 10px; /* Optional padding inside the border */
+            background-color: white; /* Background for contrast */
+        }
+
+        .client-item p {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Shoutout to our amazing Parterns</h2>
+    <div class="client-container">
+        <div class="client-item">
+            <img src="Screenshot 2024-10-12 110903.png" alt="Chargebee Logo">
+            <p>Chargebee</p>
+        </div>
+        <div class="client-item">
+            <img src="WhatsApp Image 2024-10-12 at 11.08.39_d9287889.jpg" alt="ICA Pidilite Logo">
+            <p>ICA Pidilite</p>
+        </div>
+
+        <div class="client-item">
+            <img src="WhatsApp Image 2024-10-12 at 11.09.50_61db9e55.jpg" alt="Google Logo">
+            <p>Google</p>
+        </div>
+        <div class="client-item">
+            <img src="WhatsApp Image 2024-10-12 at 11.11.06_8eb0db80.jpg" alt="Swiggy Logo">
+            <p>Swiggy</p>
+        </div>
+        <div class="client-item">
+            <img src="WhatsApp Image 2024-10-12 at 11.10.32_789a285e.jpg" alt="Zoom Logo">
+            <p>Zoom</p>
+        </div>
+        <div class="client-item">
+            <img src="WhatsApp Image 2024-10-12 at 11.11.49_3ce0daea.jpg" alt="Titan Logo">
+            <p>Titan</p>
+        </div>
+    </div>
+
+    <hr>
+  
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Features Section</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f7f7f7;
+                margin: 0;
+                padding: 20px;
+            }
+            .features-container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                max-width: 900px;
+                margin: 0 auto;
+                gap: 20px;
+            }
+            .feature {
+                display: flex;
+                align-items: center;
+                background-color: white;
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 400px;
+                margin-bottom: 20px;
+            }
+            .feature img {
+                width: 50px;
+                height: 50px;
+                margin-right: 15px;
+                border-radius: 50%;
+                background-color: #dfe6e9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .feature h3 {
+                margin: 0;
+                font-size: 1.2em;
+                color: #333;
+            }
+            .feature p {
+                margin: 0;
+                font-size: 0.9em;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="features-container">
+            <!-- Feature 1: Plastic-free -->
+            <div class="feature">
+                <img src="https://d371c3ugbb3pk.cloudfront.net/pub/media/wysiwyg/plastic-free.svg" alt="Plastic-free Icon">
+                <div>
+                    <h3>Plastic-free</h3>
+                    <p>Our products and packaging are made using the bare minimum amount of plastic.</p>
+                </div>
+            </div>
+    
+            <!-- Feature 2: Locally sourced -->
+            <div class="feature">
+                <img src="https://d371c3ugbb3pk.cloudfront.net/pub/media/wysiwyg/locally_free.svg" alt="Locally Sourced Icon">
+                <div>
+                    <h3>Locally sourced</h3>
+                    <p>All our products are sourced from locations closest to where you are to reduce carbon footprint.</p>
+                </div>
+            </div>
+    
+            <!-- Feature 3: Cruelty-free -->
+            <div class="feature">
+                <img src="https://d371c3ugbb3pk.cloudfront.net/pub/media/wysiwyg/cruelty_free.svg" alt="Cruelty-free Icon">
+                <div>
+                    <h3>Cruelty-free</h3>
+                    <p>None of our products are tested on animals.</p>
+                </div>
+            </div>
+    
+            <!-- Feature 4: Chemical-free -->
+            <div class="feature">
+                <img src="https://d371c3ugbb3pk.cloudfront.net/pub/media/wysiwyg/locally_free.svg" alt="Chemical-free Icon">
+                <div>
+                    <h3>Chemical-free</h3>
+                    <p>All our products are made from natural ingredients.</p>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            /* Footer basic styles */
+            .footer {
+                background-color: #333;
+                color: #fff;
+                padding: 40px 0;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+    
+            /* Container for each section */
+            .footer-col {
+                width: 25%;
+                margin-bottom: 20px;
+            }
+    
+            /* Styling for heading */
+            .footer h4 {
+                font-size: 18px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+    
+            /* Links list */
+            .footer ul {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            .footer ul li {
+                margin-bottom: 10px;
+            }
+    
+            .footer ul li a {
+                color: #bbb;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+    
+            .footer ul li a:hover {
+                color: #fff;
+            }
+    
+            /* Social media section styling */
+            .footer .social-icons {
+                margin-top: 20px;
+            }
+    
+            .footer .social-icons a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-color: #555;
+                border-radius: 50%;
+                line-height: 40px;
+                text-align: center;
+                color: white;
+                margin: 0 10px;
+                transition: background-color 0.3s ease;
+            }
+    
+            .footer .social-icons a:hover {
+                background-color: #fff;
+                color: #333;
+            }
+    
+            /* Footer bottom section */
+            .footer-bottom {
+                background-color: #222;
+                color: #bbb;
+                padding: 20px 0;
+                font-size: 14px;
+            }
+    
+            /* Responsive styles */
+            @media (max-width: 768px) {
+                .footer-col {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Footer HTML -->
+        <footer class="footer">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>We are committed to delivering the best products and services. Join us on our journey to innovation and excellence.</p>
+            </div>
+    
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Email: BitSquad@example.com</li>
+                    <li>Phone: +123 456 7890</li>
+                    <li>Address: Dadar Street, Mumbai, </li>
+                </ul>
+            </div>
+    
+        
+        </footer>
+    
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </div>
+    
+    
+    </body>
+    </html>
+</body>
+</html>
+
+
+   </body>
+</html>
+
+

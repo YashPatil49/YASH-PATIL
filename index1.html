@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Input Bar and Search Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;  
+            align-items: center; 
+            background-color: green;
+            padding: 10px 20px; 
+            height: 60px;
+        }
+
+       
+        .search-container {
+            display: flex;
+            align-items: center; 
+        }
+
+        
+        .navbar input[type="text"] {
+            padding: 8px 15px;
+            border-radius: 4px 0 0 4px; 
+            border: 1px solid #ccc;
+            outline: none;
+            width: 400px;
+            transition: width 0.4s ease;
+        }
+
+        /* Input bar: when focused */
+        .navbar input[type="text"]:focus {
+            width: 500px; 
+        }
+
+       
+        .navbar button {
+            padding: 10px 15px;
+            background-color: #4CAF50; 
+            color: white;
+            border: 1px solid #4CAF50;
+            border-radius: 0 4px 4px 0; /
+           
+            
+        }
+
+       
+        .navbar button:hover {
+            background-color: #045708; 
+        }
+
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        
+        .navbar a:hover {
+            background-color: orange;
+            transform: scale(1.1); 
+        }
+
+       
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar input[type="text"] {
+                width: 100%;
+            }
+
+            .navbar button {
+                width: 100%;
+                margin-top: 5px;
+            }
+
+            .navbar a {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="navbar">
+        
+        <div class="search-container">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">Search</button>
+        </div>
+        
+        
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .card-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px;
+            gap: 10px;
+            scroll-behavior: smooth;
+        }
+
+        .card {
+            flex: 0 0 auto;
+            width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            margin-left: 15px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+
+        .card-content p {
+            font-size: 1em;
+            color: #555;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="best">OUR BEST SELLERS</div>
+<style>
+    .best{
+        margin-top: 15px;
+        margin-left: 20px;
+        border:  10px;
+        color: green;
+        font-weight: 600;
+        height: 20px;
+        align-items: center;
+    }
+</style>
+    <div class="card-container">
+        <div class="card">
+            <img src="_81-hr-zm-vmmi-l-sx-679-10.png" alt="Card Image">
+            <div class="card-content">
+                <h3>JMK BOTTLE</h3>
+                <p style="color: #4CAF50;"> GKD ECO-Friendly 
+                <br>Bamboo Water Bottle<br>₹499<br>
+            <button class="yash" onclick="funcc()" >buy now</button> <button class="yash" onclick="funcc()">add to cart</button></p>
+            
+            <style>
+           .yash {
+            background-color: orange;
+            border-radius: 8px;
+            height: 25px;
+            margin-right: 20px;
+            margin-top: 15px;
+           }
+            </style>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="bengal-mat-5000-x-30.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Card Title 2</h3>
+                <p style="color: #4CAF50;">YOGA MATS<br>Made of Recycled Matter<br>₹1899<br> 
+                    <button class="yash" onclick="funcc()" >buy now</button> <button class="yash" onclick="funcc()">add to cart</button></p></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="untitled-10.png" alt="Card Image">
+            <div class="card-content">
+                <h3>ThengaConconut Shell</h3>
+                <p style="color: #4CAF50;">Cups-Set of 4<br>₹699
+                <br><button class="yash" onclick="funcc()" >buy now</button> <button class="yash" onclick="funcc()">add to cart</button></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image-30.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Thenga Jumbo Bowl</h3>
+                <p style="color: #4CAF50;">Hand Carved Jumbo Bowl<br>₹499<br>
+                    <button class="yash"  onclick="funcc()">buy now</button> <button class="yash" onclick="funcc()">add to cart</button></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image-40.png" alt="Card Image">
+            <div class="card-content">
+                <h3>Golden Tips Bag</h3>
+                <p style="color:#4CAF50;">Multipurpose Jute Bag<br>₹299<br>
+                    <button class="yash" onclick="funcc()" >buy now</button> <button class="yash" onclick="funcc()">add to cart</button></p></p>
+            </div>
+        </div>
+    
+    <style>
+    .best{
+        margin-top: 15px;
+        margin-left: 20px;
+        border:  10px;
+        color: green;
+        font-weight: 600;
+        height: 20px;
+        align-items: center;
+    }
+</style>
+    
+<script>
+    function funcc(){
+        window.location.assign("demo.html");
+    }
+</script>
+        
+
+      
+
+        
+
+ 
+    
+</body>
+</html>
+
+
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: grey;
+            margin: 0;
+            padding: 20px;
+        }
+        .cart-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgb(184, 179, 179);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            
+            border-bottom: 1px solid rgb(0, 0, 0;
+        
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .item-info {
+            display: flex;
+            align-items: center;
+        }
+        .item-info img {
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+        }
+        .item-info h2 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        .item-info p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .item-quantity {
+            display: flex;
+            align-items: center;
+        }
+        .item-quantity input {
+            width: 40px;
+            text-align: center;
+        }
+        .item-price {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .cart-buttons {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .cart-buttons button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cart-buttons button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cart-container">
+        <h1>My Cart</h1>
+
+        <!-- Cart item 1 -->
+        <div class="cart-item">
+            <div class="item-info">
+                <img src="_81-hr-zm-vmmi-l-sx-679-10.png" alt="">
+                <div>
+                    <h2>GKD Bamboo Bottle</h2>
+                    <p style="font-size: large;">You will earn <span class="releaf">2 ReLeaf Coins</span> on this Purchase</p>
+                    <style>
+                        .releaf{
+                            color:#45a049;
+                            font-weight: bolder;
+                            font-size: larger;                        }
+                        </style>
+                </div>
+            </div>
+            <div class="item-quantity">
+                <input type="number" value="1" min="1" style="height: 30px;">
+            </div>
+            <div class="item-price">₹400</div>
+        </div>
+
+        <!-- Cart item 2 -->
+        <div class="cart-item">
+            <div class="item-info">
+                <img src="bengal-mat-5000-x-30.png" alt="">
+                <div>
+                    <h2>Proyog Eco-friendly<br>Yoga Mat</h2>
+                    <p style="font-size: large;">You will earn <span class="releaf">5.16 ReLeaf Coins</span> on this Purchase</p>
+                    <style>
+                        .releaf{
+                            color:#45a049;
+                            font-weight: bolder;
+                            font-size: larger;                        }
+                        </style>
+                </div>
+            </div>
+            <div class="item-quantity">
+                <input type="number" value="2" min="1" style="height: 30px;">
+            </div>
+            <div class="item-price">₹1999</div>
+        </div>
+
+        <!-- Cart item 3 -->
+        <div class="cart-item">
+            <div class="item-info">
+                <img src="image-40.png" alt="Product Image">
+                <div>
+                    <h2>Irida Coffee Cup</h2>
+                    <p style="font-size: large;">You will earn <span class="releaf">3.14 ReLeaf Coins</span> on this Purchase</p>
+                    <style>
+                        .releaf{
+                            color:#45a049;
+                            font-weight: bolder;
+                            font-size: larger;                        }
+                        </style>
+                </div>
+            </div>
+            <div class="item-quantity">
+                <input type="number" value="1" min="1" style="height: 30px;">
+            </div>
+            <div class="item-price">₹1100</div>
+            <style>
+                .item-price{
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+                </style>
+        </div>
+
+        <!-- Total Price -->
+        <div class="total">
+            Total: ₹3499
+        </div>
+        <style>
+                .total{
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+                </style>
+
+        <!-- C
